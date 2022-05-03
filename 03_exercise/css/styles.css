@@ -9,6 +9,9 @@ h1 {
   font-family: 'Arimo', cursive;
   line-height: 1;
 }
+span {
+  color:red;
+}
 
 aside p {
   text-indent: 0vw;
@@ -31,9 +34,18 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
 body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow-y: scroll; 
   background-color: #0c0b11;
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+main {
+  display:grid;
 }
 
 section {
@@ -94,6 +106,8 @@ picture {
     grid-area: banner;
   }
 }
+
+
 
 @media screen and (min-width: 40rem) {
   @supports (display: grid) {
