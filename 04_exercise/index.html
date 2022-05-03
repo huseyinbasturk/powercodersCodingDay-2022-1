@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href ="style.css">
+    <title>BookStore HB</title>
+</head>
+<body>
+    <body>
+        <main>
+            <h1>
+                Welcome to my Bookstore
+            </h1>
+            <section>
+                <h2>Book-List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>NumberOfStock</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list"></tbody>
+                </table>
+            </section>
+            <section id="add-book">
+                <h3>Do you want to add a book?</h3>
+                <input type="text" placeholder="title of the book" id="title-input">
+                <input type="text" placeholder="author of the book" id="author-input">
+                <input type="number" placeholder="how many?" id="stock-input">
+                <input type="number" placeholder="price" id="price-input">
+                <button id="add-button">Add</button>
+            </section>
+        </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
