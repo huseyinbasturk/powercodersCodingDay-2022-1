@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+    font-size: 11px;
+    font-family:Arial, Helvetica, sans-serif;
+   
+}
+ *,*::before,*::after {
+    box-sizing: inherit;
+    font-size: 1.6rem;
+}
+h1 {
+    font-style: italic;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    height: 4rem;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+h1 {
+    padding: 0 5px;
+}
+nav {
+    width: 18rem;
+    height: 80rem;
+    border: 1px solid gray;
+}
+ul {
+    list-style: none;
+}
+nav ul li {
+    border: 1px solid gray;
+    color: gray;
+    height: 4rem;
+    padding: 12px;
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#blog-content {
+    width: 80rem;
+    background: rgba(192, 207, 206, 0.938);
+}
+#blog-content ul {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: no-wrap;
+}
+#blog-content ul li {
+    width: 800px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 5px 5px;
+    margin: 10px;
+    padding:10px;
+    height: 50%;
+}
+.blog-post {
+    color: green;
+}
+p {
+    color:gray;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 200px;
+    height: 80rem;
+}
+
+aside section {
+    border: 1px solid grey;
+    width: 10rem;
+    height: 10rem;
+    margin: 20px auto;
+    text-align: center;
+    padding: 4rem 0;
+    color: gray;
+}
+footer {
+    width: 99%;
+    height:15rem;
+    background-color: black;
+    padding:2rem 0;
+}
+footer ul {
+    margin-right: 20px;
+    font-size: 8px;
+    line-height: 32px;
+    text-align: right;
+    color:white;
+}
+
+@media only screen and (max-width: 850px) {
+    main {
+        width: 50%;
+    }
+    nav {
+        width: 25%;
+    }
+    aside{
+        width: 25%;
+    }
+}
