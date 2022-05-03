@@ -60,6 +60,7 @@ function iterate(id) {
 var result = document.getElementsByClassName("result");
 result[0].innerText = "";
 
+
 // Getting the question
 const question = document.getElementById("question");
 
@@ -130,16 +131,20 @@ const evaluate = document.getElementsByClassName("evaluate");
 
 // Evaluate method
 evaluate[0].addEventListener("click", () => {
+  let numberOfTrues=0;
   if (selected == "true") {
       result[0].innerHTML = "True";
       result[0].style.color = "green";
+      numberOfTrues++;
+      var correct = document.querySelector('#correct-result');
+      correct.innerHTML = numberOfTrues;
+      console.log(numberOfTrues);
   } else {
       result[0].innerHTML = "False";
       result[0].style.color = "red";
   }
 })
 }
-
 
 if(start) {
   iterate(Math.floor(Math.random()* Questions.length));
@@ -157,3 +162,6 @@ if (id < 4) {
   console.log(id);
 }
 })
+
+
+
